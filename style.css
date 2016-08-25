@@ -39,12 +39,12 @@ body{
 }
 
 /*Images in Tiles*/
-#icon a img{
+.icon a img{
   width:48px;
   height:48px;
 }
 /*Images in SearchTiles*/
-#searchBar a img{
+.searchBar a img{
   width:64px;
   height:64px;
 }
