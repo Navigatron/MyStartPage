@@ -2,15 +2,30 @@ html{
 height:100%;
 }
 body{
-	background-color:#222;
+background-color:#222;
 height:100%;
-display: flex;
-justify-content: center;
-align-items: center;
 margin:0px;
+display: flex;
+flex-direction:row;/*Make a row*/
+justify-content: center;/*That is centered L/R*/
+align-items: center;/*That is centered U/D*/
+align-content: center;/*And still center when wraped.*/
 }
-#panel{
+
+/*Panels*/
+#SearchPanel{
 max-width:300px;
+}
+#IconsPanel{
+max-width:300px;
+}
+
+/*Tiles*/
+#SearchTile{
+padding:10px;
+margin:20px;
+background-color:#EEE;
+display:inline-block;
 }
 #tile{
 padding:10px;
@@ -18,3 +33,21 @@ margin:20px;
 background-color:#EEE;
 display:inline-block;
 }
+
+/*Images in Tiles*/
+
+/*Images in SearchTiles*/
+
+/*The Search Bars Themselves*/
+
+
+
+
+
+
+
+
+
+
+
+
