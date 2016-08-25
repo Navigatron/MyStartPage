@@ -5,29 +5,28 @@ body{
     background-color:#222;
     height:100%;
     margin:0px;
-
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    /*flex-direction: column;*/
+    justify-content: center;
     align-items: center;
-    /*No Wrap - smaller screens handled by Media Query*/
 }
-
+#container{
+    margin: auto;
+}
 /*Panels*/
 .Panel{
     width: 99%;
-    flex: 1 1;/*Grow and Shrink*/
+    flex: 0 1;/*Grow and Shrink*/
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     max-width: 500px;
+    margin: auto;
 }
-#SearchBars{/*! min-height: 400px; *//*! margin-top: 1px; *//*! flex-shrink: 0; */}
+#SearchBars{/*! flex-grow: 0; */}
 #Icons{
     flex-direction: row;
     flex-wrap: wrap;
-    /*! justify-content: space-around; */
-    /*! align-items: flex-start; */
     align-content: flex-start;
 }
 
@@ -36,12 +35,12 @@ body{
     padding:10px;
     margin:20px;
     background-color:#EEE;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: box-shadow 0.1s ease-in-out;
 }
 /**/
 .tile:hover, .tile:focus{
-    box-shadow: 0px 0px 20px 0px rgba(0,255,255,1);
-    
+    box-shadow: 0px 0px 10px 0px rgba(0,255,255,1);
+
 }/**/
 
 
@@ -50,11 +49,8 @@ body{
 
 .searchBar{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
 }
 .icon{
-    display: inline-table;
 }
 
 /*Images in Tiles*/
@@ -69,17 +65,12 @@ body{
 }
 /*The Search Bars Themselves*/
 form{
-    margin-left: 10px;
-    flex-grow: 1;
+    min-width: 180px;
 }
 input{
-
-    width: calc(100% - 22px);
     flex-grow: 1;
-    padding: 0px;
-    /*! box-sizing: content-box; */
-    display: block;
-    border: 0px;
     padding: 10px;
     border: 1px solid aquamarine;
+    margin: auto 10px;
+    min-width: 40px;
 }
