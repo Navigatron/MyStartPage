@@ -7,24 +7,28 @@ body{
     margin:0px;
 
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     /*No Wrap - smaller screens handled by Media Query*/
 }
 
 /*Panels*/
 .Panel{
-    height:100%;
-    width: 50%;
+    width: 99%;
     flex: 1 1;/*Grow and Shrink*/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    max-width: 500px;
 }
-#SearchBars{}
+#SearchBars{/*! min-height: 400px; *//*! margin-top: 1px; *//*! flex-shrink: 0; */}
 #Icons{
+    flex-direction: row;
     flex-wrap: wrap;
+    /*! justify-content: space-around; */
+    /*! align-items: flex-start; */
+    align-content: flex-start;
 }
 
 /*Tiles*/
@@ -32,10 +36,25 @@ body{
     padding:10px;
     margin:20px;
     background-color:#EEE;
+    transition: box-shadow 0.3s ease-in-out;
 }
+/**/
+.tile:hover, .tile:focus{
+    box-shadow: 0px 0px 20px 0px rgba(0,255,255,1);
+    
+}/**/
+
+
+
+
+
 .searchBar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .icon{
+    display: inline-table;
 }
 
 /*Images in Tiles*/
@@ -49,10 +68,18 @@ body{
   height:64px;
 }
 /*The Search Bars Themselves*/
+form{
+    margin-left: 10px;
+    flex-grow: 1;
+}
 input{
 
-}
-
-@media all and (max-width:500px){
-    /*re-write it all for vertical size.*/
+    width: calc(100% - 22px);
+    flex-grow: 1;
+    padding: 0px;
+    /*! box-sizing: content-box; */
+    display: block;
+    border: 0px;
+    padding: 10px;
+    border: 1px solid aquamarine;
 }
