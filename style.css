@@ -2,75 +2,60 @@ html{
     height:100%;
 }
 body{
-    background-color:#222;
+    background-color:#231F20;
     height:100%;
     margin:0px;
     display: flex;
-    /*flex-direction: column;*/
-    justify-content: center;
-    align-items: center;
 }
 #container{
     margin: auto;
+    padding: 0px 20px;
 }
 /*Panels*/
 .Panel{
-    width: 99%;
-    flex: 0 1;/*Grow and Shrink*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 500px;
-    margin: auto;
+    margin: 10px;
 }
-#SearchBars{/*! flex-grow: 0; */}
 #Icons{
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
 }
-
 /*Tiles*/
 .tile{
     padding:10px;
-    margin:20px;
-    background-color:#EEE;
-    transition: box-shadow 0.1s ease-in-out;
+    margin:10px;
+    background-color:#E5E6E4;
+    box-shadow: 0px 0px 5px 1px rgba(0,0,0,0.75);
+    transition: box-shadow 0.2s ease-in-out;
 }
-/**/
-.tile:hover, .tile:focus{
-    box-shadow: 0px 0px 10px 0px rgba(0,255,255,1);
-
-}/**/
-
-
-
-
-
+.tile:hover{
+    box-shadow: 0px 0px 10px 2px #00D2FF;
+}
 .searchBar{
     display: flex;
+    margin: 15px 0px;
 }
-.icon{
-}
-
-/*Images in Tiles*/
+/*Images in Icon Tiles*/
 .icon a img{
   width:48px;
   height:48px;
 }
-/*Images in SearchTiles*/
+/*Images in Search Tiles*/
 .searchBar a img{
   width:64px;
   height:64px;
 }
-/*The Search Bars Themselves*/
-form{
-    min-width: 180px;
-}
+/*Search Bars*/
 input{
     flex-grow: 1;
     padding: 10px;
-    border: 1px solid aquamarine;
+    border: 1px solid #00D2FF;
     margin: auto 10px;
-    min-width: 40px;
+    background-color: #FAFAFA;
+    color: #231F20;
+    width: 40px;
 }
