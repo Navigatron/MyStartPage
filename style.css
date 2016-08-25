@@ -2,10 +2,11 @@ html{
     height:100%;
 }
 body{
-    background-color:#231F20;
     height:100%;
     margin:0px;
     display: flex;
+    background-image: url(Icons/background.jpg);
+    background-position: center;
 }
 #container{
     margin: auto;
