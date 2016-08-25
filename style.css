@@ -10,14 +10,13 @@ flex-direction:row;/*Make a row*/
 justify-content: center;/*That is centered L/R*/
 align-items: center;/*That is centered U/D*/
 align-content: center;/*And still center when wraped.*/
+flex-wrap: wrap;/*BTW wrap*/
 }
 
 /*Panels*/
 #SearchPanel{
-max-width:300px;
 }
 #IconsPanel{
-max-width:300px;
 }
 
 /*Tiles*/
@@ -25,19 +24,23 @@ max-width:300px;
 padding:10px;
 margin:20px;
 background-color:#EEE;
-display:inline-block;
 }
 #tile{
 padding:10px;
 margin:20px;
 background-color:#EEE;
-display:inline-block;
 }
 
 /*Images in Tiles*/
-
+#tile a img{
+  width:48px;
+  height:48px;
+}
 /*Images in SearchTiles*/
-
+#SearchTile a img{
+  width:64px;
+  height:64px;
+}
 /*The Search Bars Themselves*/
 
 
