@@ -1,56 +1,58 @@
 html{
-height:100%;
+    height:100%;
 }
 body{
-background-color:#222;
-height:100%;
-margin:0px;
-display: flex;
-flex-direction:row;/*Make a row*/
-justify-content: center;/*That is centered L/R*/
-align-items: center;/*That is centered U/D*/
-align-content: center;/*And still center when wraped.*/
-flex-wrap: wrap;/*BTW wrap*/
+    background-color:#222;
+    height:100%;
+    margin:0px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /*No Wrap - smaller screens handled by Media Query*/
 }
 
 /*Panels*/
-#SearchPanel{
+.Panel{
+    height:100%;
+    width: 50%;
+    flex: 1 1;/*Grow and Shrink*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
-#IconsPanel{
+#SearchBars{}
+#Icons{
+    flex-wrap: wrap;
 }
 
 /*Tiles*/
-#SearchTile{
-padding:10px;
-margin:20px;
-background-color:#EEE;
+.tile{
+    padding:10px;
+    margin:20px;
+    background-color:#EEE;
 }
-#tile{
-padding:10px;
-margin:20px;
-background-color:#EEE;
+.searchBar{
+}
+.icon{
 }
 
 /*Images in Tiles*/
-#tile a img{
+#icon a img{
   width:48px;
   height:48px;
 }
 /*Images in SearchTiles*/
-#SearchTile a img{
+#searchBar a img{
   width:64px;
   height:64px;
 }
 /*The Search Bars Themselves*/
+input{
 
+}
 
-
-
-
-
-
-
-
-
-
-
+@media all and (max-width:500px){
+    /*re-write it all for vertical size.*/
+}
